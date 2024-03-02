@@ -1,4 +1,6 @@
-﻿namespace iApple.Domain.Entities.User;
+﻿using iApple.Domain.Commons;
+
+namespace iApple.Domain.Entities.User;
 
 public class User : Auditable
 {

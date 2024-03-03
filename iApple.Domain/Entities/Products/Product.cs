@@ -9,6 +9,6 @@ public class Product : Auditable
     public decimal Price { get; set; }
     public long Quantity { get; set; }
     public string Storage { get; set; }
-    public long CategoryId { get; set; }
     public string Description { get; set; }
+    public string CategoryName { get; set; }
 }

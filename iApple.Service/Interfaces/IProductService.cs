@@ -9,8 +9,8 @@ public interface IProductService
     ValueTask<List<ProductViewModel>> GetAllProductsAsync(); // later add pagination
     ValueTask<List<ProductViewModel>> SearchByName(string name);
     ValueTask<ProductViewModel> UpdatePrice(int id, decimal price);
-    ValueTask<ProductViewModel> IncrementQuantity(int id, decimal price);
-    ValueTask<ProductViewModel> DecrementQuantity(int id, decimal price);
+    ValueTask<ProductViewModel> IncrementQuantity(int id, long quantity);
+    ValueTask<ProductViewModel> DecrementQuantity(int id, long quantity);
     ValueTask<List<ProductViewModel>> GetAllByCategoryAsync(string category);
     ValueTask<ProductViewModel> CreateAsync(ProductCreationModel productCreation);
     ValueTask<ProductViewModel> UpdateAsync(int id, ProductUpdateModel productUpdate);

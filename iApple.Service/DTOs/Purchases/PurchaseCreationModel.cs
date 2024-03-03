@@ -6,4 +6,5 @@ public class PurchaseCreationModel
     public long CardId { get; set; }
     public long OrderId { get; set; }
     public decimal TotalAmount { get; set; }
+    public DateTime PurchasedDate { get; set; }
 }
